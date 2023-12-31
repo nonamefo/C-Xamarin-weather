@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Погода.MainPage">
+
+
+    <StackLayout>
+        <StackLayout BackgroundColor="#0000FF" >
+            <Label Text="Weather now" HorizontalOptions="Center" FontSize="35" FontAttributes="Bold" TextColor="Black" Margin="0, 50, 0, 0" Padding="0, 0, 0, 20" />
+            <Image Margin="0, 0, 0, 5"  Source="https://kartin.papik.pro/uploads/posts/2023-07/1689305154_kartin-papik-pro-p-kartinki-prognoz-pogodi-solnishko-3.png"/>
+        </StackLayout>
+        <RelativeLayout HorizontalOptions="Center">
+            <Frame RelativeLayout.YConstraint="-40" HorizontalOptions="Center" BackgroundColor="#EEEEEE">
+                <StackLayout HorizontalOptions="Center">
+                    <Entry x:Name="nameInput" HorizontalOptions="Center" WidthRequest="200" TextColor="Black" />
+
+                    <Button Text="Okey" Clicked="Button_Clicked"  HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+        </RelativeLayout>
+    </StackLayout>
+
+
+</ContentPage>
